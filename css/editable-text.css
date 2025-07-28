@@ -1,0 +1,5 @@
+.editable-text {
+    overflow: visible;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+}

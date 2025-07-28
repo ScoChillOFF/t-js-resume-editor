@@ -1,47 +1,54 @@
 .languages-block {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 12px;
+  width: 267px;
+  min-height: 124px;
+  border-radius: 12px;
+  background-color: var(--background-block-1);
+  font-family: "Poppins", sans-serif;
+
+  .title {
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 150%;
+    font-weight: 500;
+  }
+
+  .languages-list {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-flow: column nowrap;
 
-    padding: 12px;
-    width: 267px;
-    height: 124px;
-    border-radius: 12px;
-    background-color: var(--background-block-1);
-    font-family: "Poppins", sans-serif;
+    gap: 10px;
+    list-style: none;
 
-    .title {
-      font-weight: 500;
-    }
+    .language-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-    .languages-list {
-      list-style: none;
+      .language-name {
+        max-width: 30%;
+        color: var(--text-primary-1);
+        line-height: 104%;
+        font-size: 10px;
+        font-weight: 500;
+        text-align: left;
+      }
 
-      .language-item {
-        display: flex;
-        justify-content: space-between;
+      .language-level-container {
+        width: 168px;
+        height: 11px;
 
-        .language-name {
-          max-width: 50%;
-          overflow: hidden;
-          text-overflow: ellipsis;
-
-          color: var(--text-primary-1);
-          font-size: 10px;
-          font-weight: 500;
-          text-align: center;
-        }
-
-        .language-level-container {
-            width: 168px;
-            height: 11px;
-
-            .language-level-bar {
-                height: 100%;
-                border-radius: 3px;
-                background-color: var(--bg-accent-1);
-            }
+        .language-level-bar {
+          height: 100%;
+          border-radius: 3px;
+          background-color: var(--bg-accent-1);
         }
       }
     }
   }
+}
