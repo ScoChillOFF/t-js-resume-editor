@@ -66,4 +66,52 @@
       }
     }
   }
+
+  .languages-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 12px;
+    width: 267px;
+    height: 124px;
+    border-radius: 12px;
+    background-color: var(--background-block-1);
+    font-family: "Poppins", sans-serif;
+
+    .title {
+      font-weight: 500;
+    }
+
+    .languages-list {
+      list-style: none;
+
+      .language-item {
+        display: flex;
+        justify-content: space-between;
+
+        .language-name {
+          max-width: 50%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          color: var(--text-primary-1);
+          font-size: 10px;
+          font-weight: 500;
+          text-align: center;
+        }
+
+        .language-level-container {
+            width: 168px;
+            height: 11px;
+
+            .language-level-bar {
+                height: 100%;
+                border-radius: 3px;
+                background-color: var(--bg-accent-1);
+            }
+        }
+      }
+    }
+  }
 }
