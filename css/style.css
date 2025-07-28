@@ -1,0 +1,27 @@
+@import url(resume.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 auto;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1100px;
+}

@@ -1,0 +1,17 @@
+.resume {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 0 auto;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    width: 100%;
+    max-width: 842px;
+
+    .row {
+        display: flex;
+        flex-flow: row wrap;
+        flex: 0 0 auto; 
+        gap: 20px;
+    }
+}
