@@ -1,4 +1,7 @@
 @import url(resume.css);
+@import url(profile-img-block.css);
+@import url(name-block.css);
+@import url(languages-block.css);
 @import url(theme.css);
 
 * {
