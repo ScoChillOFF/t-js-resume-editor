@@ -1,0 +1,118 @@
+.experiences-block {
+  display: flex;
+  width: 411px;
+  flex-flow: column nowrap;
+  gap: 16px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: var(--background-block-1);
+  font-family: "Poppins", sans-serif;
+
+  @media screen and (max-width: 595px) {
+    width: 267px;
+  }
+
+  .title {
+    color: var(--text-primary-1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  .experiences-list {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    list-style: none;
+
+    .experience-item {
+      --experience-primary-text: var(--text-primary-1);
+      --experience-secondary-text: var(--text-secondary-1);
+
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 8px;
+      padding: 8px;
+      border-radius: 10px;
+      color: var(--experience-primary-text);
+      background-color: var(--background-block-2);
+
+      &.most-recent {
+        background-color: var(--bg-accent-1);
+        --experience-primary-text: var(--text-primary-2);
+        --experience-secondary-text: var(--text-secondary-2);
+      }
+
+      .experience-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .experience-date {
+          font-size: 8px;
+          font-weight: 500;
+          line-height: 150%;
+          letter-spacing: 0%;
+          text-align: left;
+        }
+
+        .most-recent-label {
+          width: 61px;
+          height: 12px;
+          color: var(--text-accent-1);
+          font-size: 8px;
+          font-weight: 500;
+          line-height: 155%;
+          letter-spacing: 0%;
+          text-align: center;
+          border-radius: 59px;
+
+          background: var(--bg-accent-2);
+        }
+      }
+
+      .experience-body {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+
+        .job-info {
+          display: flex;
+          flex-flow: column nowrap;
+          max-width: 124px;
+
+          .job-title {
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 150%;
+            letter-spacing: 0%;
+            text-align: left;
+          }
+
+          .job-about-position {
+            color: var(--experience-secondary-text);
+            font-size: 8px;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0%;
+            text-align: left;
+          }
+        }
+
+        .featured-points {
+          flex: 0 1 239px;
+          padding-left: 1.5em;
+          max-width: 65%;
+          list-style: disc;
+          font-size: 8px;
+          font-weight: 400;
+          line-height: 150%;
+          letter-spacing: 0%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
