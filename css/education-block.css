@@ -62,6 +62,9 @@
       }
 
       .education-info {
+        display: flex;
+        flex-flow: column nowrap;
+
         .education-profile {
           font-size: 10px;
           font-weight: 500;

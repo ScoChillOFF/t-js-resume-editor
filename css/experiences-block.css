@@ -59,6 +59,7 @@
         }
 
         .most-recent-label {
+          box-sizing: content-box;
           width: 61px;
           height: 12px;
           color: var(--text-accent-1);
