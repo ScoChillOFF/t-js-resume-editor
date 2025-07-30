@@ -14,5 +14,11 @@
     justify-content: center;
     flex: 0 0 auto;
     gap: 20px;
+
+    .interests-contacts-area {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 20px;
+    }
   }
 }
