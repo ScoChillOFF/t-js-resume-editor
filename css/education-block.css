@@ -1,0 +1,82 @@
+.education-block {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 16px;
+  padding: 12px;
+  width: 268px;
+  border-radius: 12px;
+  background-color: var(--background-block-1);
+  font-family: "Poppins", sans-serif;
+
+  .title {
+    color: var(--text-primary-1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  .educations-list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 12px;
+    row-gap: 12px;
+    list-style: none;
+    align-items: flex-start;
+
+    .education-item {
+      --education-primary-text: var(--primary-text-1);
+      --education-secondary-text: var(--text-secondary-3);
+
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 8px;
+      padding: 8px;
+      width: 116px;
+      border-radius: 10px;
+      background-color: var(--background-block-2);
+      color: var(--education-primary-text);
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 150%;
+      text-align: left;
+
+      &.favorite {
+        background-color: var(--bg-accent-1);
+        --education-primary-text: var(--text-primary-2);
+        --education-secondary-text: var(--text-secondary-2);
+      }
+
+      .education-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .education-date {
+          font-size: 10px;
+          font-weight: 500;
+          line-height: 150%;
+          text-align: left;
+        }
+      }
+
+      .education-info {
+        .education-profile {
+          font-size: 10px;
+          font-weight: 500;
+          line-height: 150%;
+          text-align: left;
+        }
+
+        .tags {
+          color: var(--education-secondary-text);
+          font-size: 8px;
+          font-weight: 400;
+          line-height: 150%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
