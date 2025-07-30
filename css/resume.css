@@ -5,8 +5,12 @@
   gap: 20px;
   margin: 0 auto;
   padding: 20px 15px;
-  width: 100%;
-  max-width: 595px;
+  width: 595px;
+  outline: dashed 2px var(--background-block-1);
+
+  @media screen and (max-width: 595px) {
+    width: 320px;
+  }
 
   .row {
     display: flex;
