@@ -6,6 +6,7 @@
 @import url(tools-block.css);
 @import url(education-block.css);
 @import url(interests-block.css);
+@import url(editable-text.css);
 @import url(theme.css);
 
 * {
