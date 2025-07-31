@@ -48,9 +48,32 @@ btn.addEventListener("click", () => {
     },
     jsPDF: {
       unit: "px",
-      format: [595, element.scrollHeight], 
+      format: [595, element.scrollHeight],
     },
   };
 
   html2pdf().from(element).set(opt).save();
+});
+
+const editableTexts = document.querySelectorAll(".editable-text");
+
+editableTexts.forEach((element, index) => {
+  const savedText = localStorage.getItem(`editable-text-${index}`);
+  if (savedText !== null) {
+      element.textContent = savedText;
+  }
+});
+
+editableTexts.forEach((element, index) => {
+  element.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" || e.key === "Escape") {
+      e.preventDefault();
+      this.blur();
+    }
+  });
+
+  element.addEventListener("blur", function () {
+    const content = this.textContent;
+    localStorage.setItem(`editable-text-${index}`, content);
+  });
 });
