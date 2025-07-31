@@ -1,0 +1,28 @@
+.resume {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 auto;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  width: 595px;
+  outline: dashed 2px var(--text-secondary-1);
+
+  @media screen and (max-width: 595px) {
+    width: 320px;
+  }
+
+  .row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex: 0 0 auto;
+    gap: 20px;
+
+    .interests-contacts-area {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 20px;
+    }
+  }
+}

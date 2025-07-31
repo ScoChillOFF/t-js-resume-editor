@@ -1,0 +1,21 @@
+.interests-block {
+  flex: 1 0 auto;
+  width: 268px;
+
+  .interests-list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 8px;
+    list-style: none;
+
+    .interest-item {
+      padding: 4px 10px;
+      max-width: 90%;
+      background-color: var(--background-block-2);
+      border-radius: 40px;
+      font-size: 10px;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}

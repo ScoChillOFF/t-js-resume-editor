@@ -1,13 +1,416 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
+    <main class="content">
+      <section class="heading">
+        <h1>Resume-editor</h1>
+        <p>Create a nice resume with ease</p>
+        <hr />
+      </section>
+      <section class="resume" id="resume">
+        <div class="row">
+          <img
+            src="img/profilePlaceholder.png"
+            alt="Фото кандидата"
+            class="profile-img"
+          />
+          <section class="name-block resume-base-block">
+            <p class="greeting editable-text" contenteditable="true">
+              Hello 👋🏻 I’m
+            </p>
+            <div class="introduction">
+              <h2 class="name editable-text" contenteditable="true">
+                Karthik SR
+              </h2>
+              <p class="specialization editable-text" contenteditable="true">
+                UX/UI Designer
+              </p>
+            </div>
+          </section>
+
+          <section class="languages-block resume-base-block">
+            <h2 class="title editable-text" contenteditable="true">
+              Languages
+            </h2>
+
+            <ul class="languages-list">
+              <li class="language-item">
+                <span class="language-name editable-text" contenteditable="true"
+                  >English</span
+                >
+                <div class="language-level-container">
+                  <div class="language-level-bar" style="width: 100%"></div>
+                </div>
+              </li>
+              <li class="language-item">
+                <span class="language-name editable-text" contenteditable="true"
+                  >Malayalam</span
+                >
+                <div class="language-level-container">
+                  <div class="language-level-bar" style="width: 100%"></div>
+                </div>
+              </li>
+              <li class="language-item">
+                <span class="language-name editable-text" contenteditable="true"
+                  >Hindi</span
+                >
+                <div class="language-level-container">
+                  <div class="language-level-bar" style="width: 70%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="row">
+          <section class="experiences-block resume-base-block">
+            <h2 class="title editable-text" contenteditable="true">
+              Experience
+            </h2>
+
+            <ul class="experiences-list">
+              <li class="experience-item most-recent">
+                <div class="experience-header">
+                  <span
+                    class="experience-date editable-text"
+                    contenteditable="true"
+                  >
+                    Jun. 2023 - Present
+                  </span>
+                  <span
+                    class="most-recent-label editable-text"
+                    contenteditable="true"
+                  >
+                    most recent
+                  </span>
+                </div>
+                <div class="experience-body">
+                  <div class="job-info">
+                    <h3 class="job-title editable-text" contenteditable="true">
+                      Marketing Manager
+                    </h3>
+                    <p
+                      class="job-about-position editable-text"
+                      contenteditable="true"
+                    >
+                      Pankayam | Full-time
+                    </p>
+                  </div>
+                  <ul class="featured-points">
+                    <li class="editable-text" contenteditable="true">
+                      Strategy development and planning of campaigns that
+                      promote the business and generate genuine traffic
+                    </li>
+                    <li class="editable-text" contenteditable="true">
+                      SEO Content Creation for Blogs, Website, Social media
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="experience-item">
+                <div class="experience-header">
+                  <span
+                    class="experience-date editable-text"
+                    contenteditable="true"
+                    >2017 - Present</span
+                  >
+                </div>
+                <div class="experience-body">
+                  <div class="job-info">
+                    <h3 class="job-title editable-text" contenteditable="true">
+                      Graphic / Web designer
+                    </h3>
+                    <p
+                      class="job-about-position editable-text"
+                      contenteditable="true"
+                    >
+                      Freelance
+                    </p>
+                  </div>
+                  <ul class="featured-points">
+                    <li class="editable-text" contenteditable="true">
+                      Development of internal projects from scratch, product
+                      design of brands
+                    </li>
+                    <li class="editable-text" contenteditable="true">
+                      Landing page, webapps and hybrid apps
+                    </li>
+                    <li class="editable-text" contenteditable="true">
+                      Coordinating with outside agencies, art services, web
+                      designer, marketing, printers, and colleagues as
+                      necessary.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="experience-item">
+                <div class="experience-header">
+                  <span
+                    class="experience-date editable-text"
+                    contenteditable="true"
+                    >Sep. 2021 - Jun. 2023</span
+                  >
+                </div>
+                <div class="experience-body">
+                  <div class="job-info">
+                    <h3 class="job-title editable-text" contenteditable="true">
+                      Legal Assistant
+                    </h3>
+                    <p
+                      class="job-about-position editable-text"
+                      contenteditable="true"
+                    >
+                      Law Firm | Intern
+                    </p>
+                  </div>
+                  <ul class="featured-points">
+                    <li class="editable-text" contenteditable="true">
+                      Provide administrative support to lawyer and enhance
+                      office effectiveness
+                    </li>
+                    <li class="editable-text" contenteditable="true">
+                      Handle communication with clients, witnesses etc.
+                    </li>
+                    <li class="editable-text" contenteditable="true">
+                      repare case briefs and summarize depositions,
+                      interrogatories and testimony
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="tools-block resume-base-block">
+            <h2 class="title editable-text" contenteditable="true">
+              Tools
+            </h2>
+            <ul class="tools-domains-list">
+              <li class="tools-domain-item">
+                <h3
+                  class="tools-domain-title editable-text"
+                  contenteditable="true"
+                >
+                  design
+                </h3>
+                <ul class="tools-list">
+                  <li class="tool-item">
+                    <img src="img/logoFigma.svg" alt="" />
+                  </li>
+                  <li class="tool-item">
+                    <img src="img/icon _adobe photoshop_.svg" alt="" />
+                  </li>
+                  <li class="tool-item">
+                    <img src="img/icon _adobe illustrator_.svg" alt="" />
+                  </li>
+                  <li class="tool-item">
+                    <img src="img/icon _adobe premiere_.svg" alt="" />
+                  </li>
+                  <li class="tool-item">
+                    <img src="img/logoNotion.svg" alt="" />
+                  </li>
+                  <li class="tool-item">
+                    <img src="img/logoMeet.svg" alt="" />
+                  </li>
+                </ul>
+              </li>
+              <li class="tools-domain-item">
+                <h3
+                  class="tools-domain-title editable-text"
+                  contenteditable="true"
+                >
+                  no-code
+                </h3>
+                <ul class="tools-list">
+                  <li class="tool-item">
+                    <img src="img/logoZapìer 1.svg" alt="" />
+                  </li>
+                  <li class="tool-item">
+                    <img src="img/logoWebflow.svg" alt="" />
+                  </li>
+                  <li class="tool-item">
+                    <img src="img/logoFramer.svg" alt="" />
+                  </li>
+                  <li class="tool-item">
+                    <img src="img/logoWordpress.svg" alt="" />
+                  </li>
+                </ul>
+              </li>
+              <li class="tools-domain-item">
+                <h3
+                  class="tools-domain-title editable-text"
+                  contenteditable="true"
+                >
+                  artificial intelligence
+                </h3>
+                <ul class="tools-list">
+                  <li class="tool-item">
+                    <img src="img/logoChatGPT 1.svg" alt="" />
+                  </li>
+                  <li class="tool-item">
+                    <img src="img/logoCopilot 1.svg" alt="" />
+                  </li>
+                  <li class="tool-item">
+                    <img src="img/logoMidjourney 1.svg" alt="" />
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="row">
+          <section class="education-block resume-base-block">
+            <h2 class="title editable-text" contenteditable="true">
+              Education
+            </h2>
+            <ul class="educations-list">
+              <li class="education-item favorite">
+                <div class="education-header">
+                  <span
+                    class="education-date editable-text"
+                    contenteditable="true"
+                    >2023</span
+                  >
+                  <img
+                    src="img/favoriteEducation.svg"
+                    alt=""
+                    class="favorite-label"
+                  />
+                </div>
+                <div class="education-info">
+                  <h3
+                    class="education-profile editable-text"
+                    contenteditable="true"
+                  >
+                    UI/UX
+                  </h3>
+                  <p class="tags editable-text" contenteditable="true">
+                    #UX #UI #research #DesignSystem #UI #wireframing #figma #Ux
+                  </p>
+                </div>
+                <span
+                  class="education-place editable-text"
+                  contenteditable="true"
+                  >Coursera</span
+                >
+              </li>
+
+              <li class="education-item">
+                <div class="education-header">
+                  <span
+                    class="education-date editable-text"
+                    contenteditable="true"
+                    >2017-2022</span
+                  >
+                </div>
+                <div class="education-info">
+                  <h3
+                    class="education-profile editable-text"
+                    contenteditable="true"
+                  >
+                    Law
+                  </h3>
+                  <p class="tags editable-text" contenteditable="true">
+                    #law #legalStudies #contracts #internationalLaws
+                  </p>
+                </div>
+                <span
+                  class="education-place editable-text"
+                  contenteditable="true"
+                  >University of Kerala</span
+                >
+              </li>
+
+              <li class="education-item">
+                <div class="education-header">
+                  <span
+                    class="education-date editable-text"
+                    contenteditable="true"
+                    >2017</span
+                  >
+                </div>
+                <div class="education-info">
+                  <h3
+                    class="education-profile editable-text"
+                    contenteditable="true"
+                  >
+                    Graphic design
+                  </h3>
+                  <p class="tags editable-text" contenteditable="true">
+                    #branding #web #illustration #adobe
+                  </p>
+                </div>
+                <span
+                  class="education-place editable-text"
+                  contenteditable="true"
+                  >Coursera
+                </span>
+              </li>
+            </ul>
+          </section>
+          <div class="interests-contacts-area">
+            <section class="interests-block resume-base-block">
+              <h2 class="title editable-text" contenteditable="true">
+                Interests
+              </h2>
+              <ul class="interests-list">
+                <li class="interest-item editable-text" contenteditable="true">
+                  branding
+                </li>
+                <li class="interest-item editable-text" contenteditable="true">
+                  design
+                </li>
+                <li class="interest-item editable-text" contenteditable="true">
+                  photography
+                </li>
+                <li class="interest-item editable-text" contenteditable="true">
+                  artificial intelligence
+                </li>
+                <li class="interest-item editable-text" contenteditable="true">
+                  illustration
+                </li>
+                <li class="interest-item editable-text" contenteditable="true">
+                  typography
+                </li>
+                <li class="interest-item editable-text" contenteditable="true">
+                  social networks
+                </li>
+                <li class="interest-item editable-text" contenteditable="true">
+                  research
+                </li>
+                <li class="interest-item editable-text" contenteditable="true">
+                  dron pilot
+                </li>
+                <li class="interest-item editable-text" contenteditable="true">
+                  games
+                </li>
+              </ul>
+            </section>
+            <section class="contacts-block resume-base-block">
+              <h2 class="title editable-text" contenteditable="true">
+                Let´s chat! I´m ready to work on exciting projects
+              </h2>
+              <p class="contact editable-text" contenteditable="true"
+                >srkarthik.designscape@gmail.com
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+        <button class="button" id="downloadButton">Download</button>
+    </main>
+    <script src="./js/main.js" type="module"></script>
   </body>
 </html>
