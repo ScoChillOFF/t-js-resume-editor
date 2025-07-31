@@ -8,6 +8,7 @@
 @import url(interests-block.css);
 @import url(contacts-block.css);
 @import url(editable-text.css);
+@import url(button.css);
 @import url(theme.css);
 
 * {
@@ -31,8 +32,12 @@ body {
 .content {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
   flex: 1 0 auto;
   margin: 0 auto;
+  padding: 0 0 20px 0;
   width: 100%;
   max-width: 1100px;
+  gap: 20px;
+  font-family: "Poppins", sans-serif;
 }

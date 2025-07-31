@@ -18,3 +18,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.querySelectorAll('.button').forEach(button => {
+  button.addEventListener('click', function() {
+    const ripple = document.createElement('span');
+    ripple.classList.add('ripple-effect');
+    
+    button.appendChild(ripple);
+    
+    ripple.addEventListener('animationend', () => {
+      ripple.remove();
+    });
+  });
+});
