@@ -1,19 +1,6 @@
 .interests-block {
-  display: flex;
-  flex-flow: column nowrap;
   flex: 1 0 auto;
-  gap: 16px;
   width: 268px;
-  padding: 12px;
-  border-radius: 12px;
-  background-color: var(--background-block-1);
-
-  color: var(--text-primary-1);
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 150%;
-  text-align: left;
 
   .interests-list {
     display: flex;
@@ -22,10 +9,10 @@
     list-style: none;
 
     .interest-item {
-        padding: 4px 10px;
-        max-width: 90%;
-        background-color: var(--background-block-2);
-        border-radius: 40px;
+      padding: 4px 10px;
+      max-width: 90%;
+      background-color: var(--background-block-2);
+      border-radius: 40px;
       font-size: 10px;
       font-weight: 400;
       text-align: center;

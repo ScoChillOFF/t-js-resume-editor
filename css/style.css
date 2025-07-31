@@ -1,4 +1,6 @@
 @import url(resume.css);
+@import url(resume-base-block.css);
+@import url(button.css);
 @import url(profile-img-block.css);
 @import url(name-block.css);
 @import url(languages-block.css);
@@ -8,7 +10,6 @@
 @import url(interests-block.css);
 @import url(contacts-block.css);
 @import url(editable-text.css);
-@import url(button.css);
 @import url(theme.css);
 
 * {

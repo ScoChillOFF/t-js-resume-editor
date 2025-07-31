@@ -1,24 +1,9 @@
 .experiences-block {
-  display: flex;
+  padding-bottom: 10px;
   width: 411px;
-  flex-flow: column nowrap;
-  gap: 16px;
-  padding: 12px;
-  border-radius: 12px;
-  background-color: var(--background-block-1);
-  font-family: "Poppins", sans-serif;
 
   @media screen and (max-width: 595px) {
     width: 267px;
-  }
-
-  .title {
-    color: var(--text-primary-1);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: left;
   }
 
   .experiences-list {
@@ -54,19 +39,16 @@
           font-size: 8px;
           font-weight: 500;
           line-height: 150%;
-          letter-spacing: 0%;
           text-align: left;
         }
 
         .most-recent-label {
-          box-sizing: content-box;
           width: 61px;
-          height: 12px;
           color: var(--text-accent-1);
           font-size: 8px;
           font-weight: 500;
           line-height: 155%;
-          letter-spacing: 0%;
+          padding: 2px 0;
           text-align: center;
           border-radius: 59px;
 

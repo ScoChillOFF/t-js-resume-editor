@@ -1,12 +1,12 @@
 .editable-text {
   overflow: visible;
-  overflow-wrap: anywhere;
-  hyphens: auto;
   position: relative;
   outline: none;
   padding: 0;
   transition: all 0.2s ease;
   z-index: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 
   &::after {
     content: "";

@@ -1,24 +1,9 @@
 .tools-block {
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 15px;
-  padding: 12px 12px 2.95px 12px;
   width: 124px;
-  border-radius: 12px;
-  background-color: var(--background-block-1);
-  font-family: "Poppins", sans-serif;
 
    @media screen and (max-width: 595px) {
     width: 267px;       
    }
-
-  .title {
-    color: var(--text-primary-1);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 150%;
-    text-align: left;
-  }
 
   .tools-domains-list {
     display: flex;
@@ -64,7 +49,6 @@
         gap: 16px;
         margin: 0 auto;
         list-style: none;
-        padding: 0;
 
         .tool-item {
           width: 19px;

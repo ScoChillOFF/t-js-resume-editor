@@ -1,22 +1,6 @@
 .languages-block {
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 16px;
-
-  padding: 12px;
   width: 267px;
   min-height: 124px;
-  border-radius: 12px;
-  background-color: var(--background-block-1);
-  font-family: "Poppins", sans-serif;
-
-  .title {
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: 150%;
-    font-weight: 500;
-  }
 
   .languages-list {
     display: flex;
@@ -32,7 +16,6 @@
 
       .language-name {
         max-width: 25%;
-        color: var(--text-primary-1);
         line-height: 104%;
         font-size: 10px;
         font-weight: 500;

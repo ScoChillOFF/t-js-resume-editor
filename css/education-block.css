@@ -1,22 +1,6 @@
 .education-block {
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 16px;
-  padding: 12px;
   width: 268px;
-  border-radius: 12px;
-  background-color: var(--background-block-1);
-  font-family: "Poppins", sans-serif;
-
-  .title {
-    color: var(--text-primary-1);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: left;
-  }
-
+  
   .educations-list {
     display: flex;
     flex-flow: row wrap;
